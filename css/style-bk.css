@@ -1,0 +1,169 @@
+body {
+  font: 400 12px/18px "Ubuntu", sans-serif;
+  color: #888;
+  background: #fff;
+}
+
+a {
+  text-decoration: none !important;
+  color: #777;
+}
+
+a:hover {
+  color: #19caaf;
+}
+
+/* input:focus {
+  outline: none !important;
+}
+
+input[type="text"]:focus {
+  outline: none !important;
+} */
+
+.header {
+  background: #f2f2f2;
+  border-bottom: 5px solid #555;
+  width: 100%;
+}
+ul.top-list {
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+
+ul.top-list li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 8px;
+}
+
+ul.top-list div.dropdown a.dropdown-item {
+  font-size: 1.2em;
+  width: 100%;
+  padding-left: 10px; 
+} 
+ul.top-list div.dropdown a.dropdown-item:hover {
+  background: #19caaf;
+  transition: 0.3s;
+
+}
+
+ul.top-list li.top-list-item a i:hover {
+  color: #2f2f2f;
+}
+
+img.logo {
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.phone i{
+  color: #19caaf;
+  padding-right: 10px;
+}
+
+
+.phone-number {
+  color: #000;
+  font-size: 2em;
+}
+
+.nav {
+    margin-top: 19px;
+    background: #2f2f2f;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-left: 24px;
+}
+
+.nav > ul {
+    margin: 0;
+    float: left;
+}
+
+.nav > ul > li {
+    margin-top: 20px;
+}
+
+.nav > ul > li + li {
+    margin-left: 6px;
+}
+
+.nav li i {
+  font-size: 1.2em;
+}
+
+.nav span.hidden-sm {
+  margin-left: 3px;
+}
+
+.nav a {
+    font-size: 14px;
+    color: #FFF;
+}
+.header .box-cart {
+    float: right;
+}
+
+.cart {
+  position: relative;
+}
+.cart > button {
+    background: #19caaf;
+    border-top-right-radius: 5px;
+    border: 0;
+    padding: 0 21px 0 18px;
+    line-height: 59px;
+    text-align: center;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.cart .dropdown-menu {
+    background: #f2f2f2;
+    z-index: 1001;
+    min-width: 260px;
+}
+
+.cart .dropdown-menu li p {
+    margin: 20px 0;
+}
+
+/* Override Bootstrap & Fontawesome class */
+.fab {
+  color: #19caaf;
+}
+
+.fa {
+  color: #19caaf;
+}
+
+.dropdown-item {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+}
+
+.form-control {
+  border: none;
+  outline: none;
+}
+
+
+.input-group {
+  margin-left: -10px;
+}
+
+.input-group-addon {
+  border: none;
+  background: #19caaf;
+  color: #fff;
+  padding: 6px 15px !important;
+}
+
+.input-group-addon:hover {
+  background: #2f2f2f;
+  cursor: pointer;
+}
