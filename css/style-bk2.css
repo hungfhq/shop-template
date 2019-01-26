@@ -45,18 +45,12 @@ input:focus {
 }
 
 .header i#soundAccordion {
-  color: #777;
-  /* margin-left: 128px; */
-  float: right;
+  color: #e1e0e0;
 }
 
 .header i#soundAccordion:hover {
   cursor: pointer;
   color: #19caaf;
-}
-
-#accordionUl>a {
-  padding-left: 24px;
 }
 
 ul.top-list {
@@ -164,14 +158,11 @@ img.logo {
   margin-top: -60px; 
 }
 
-.cat-item {
+ul li.cat-item {
   border-bottom: 1px solid #e1e0e0;
   font-size: 14px;
   padding: 13px 10px 13px 17px;
   width: 100%;
-}
-a.cat-item {
-  display: block;
 }
 
 /* ul li.cat-item:nth-child(1) {
@@ -203,18 +194,13 @@ a:hover > i {
 /* Main contain */
 
 .main-product {
-  background: #f2f2f2;
+  background: #f2f2f2 url('../img/iPhone-Reparation.png') no-repeat -90px top;
+  /* margin-left: 14px; */
   margin-top: 30px;
   height: 330px;
-  padding-left: 350px;
+  padding-left: 300px;
   padding-top: 100px;
-}
-
-.main-product img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  /* width: 848px; */
 }
 
 /* #main .col-sm-9 {
@@ -244,19 +230,8 @@ a:hover > i {
 
 #mainProductAngle {
   position: absolute;
-  top: 290px;
+  top: 300px;
   right: 50px;
-  width: 30px;
-}
-
-#mainProductAngle i {
-  color: black;
-}
-
-
-#mainProductAngle i:hover {
-  color: #19caaf;
-  cursor: pointer;
 }
 
 .main-product span.main-product-angle {
@@ -338,8 +313,8 @@ footer div.col-sm-8 div.col-xs-3 {
   padding-left: 0 !important;
 }
 
-footer div.row .col-sm-6 {
-  padding-left: 4px;
+footer div.row div.col-sm-6 {
+  padding-left: 0 !important;
 }
 
 footer div.row div.col-sm-6 ul li i {
@@ -463,17 +438,13 @@ h3, h4 {
   margin-right: 10px;
 }
 
-li.cat-item i.fa-angle-down {
-  margin-right: 10px;
-}
-
 /* .fa-angle-up {
   margin-left: 140px;
 } */
-/* 
+
 .fa-angle-down {
   margin-left: 4px;
-} */
+}
 
 @media (max-width: 1199px) and (min-width: 992px) {
 .navbar-inverse .navbar-nav>li>a {
@@ -512,9 +483,6 @@ li.cat-item i.fa-angle-down {
     padding-left: 100px;
   }
 
-  footer .col-sm-6 {
-    padding: 4px;
-  }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
