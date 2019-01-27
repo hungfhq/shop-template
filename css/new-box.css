@@ -1,6 +1,3 @@
-
-
-
 .new-tag {
     position: relative;
     top: 10px;
@@ -10,7 +7,7 @@
 .new-box-content {
 	 border: 1px solid #e1e0e0;
 	/* width: 218px; */
-	height: 360px;
+	height: 420px;
 	padding: 10px 20px 20px 20px;
 	overflow: hidden;
 }
@@ -41,8 +38,14 @@
     left: 16px;
 }
 
+.img-wrapper {
+    width: 220px;
+    height: 150px;
+    margin: auto auto 50px auto;
+}
+
 .new-box-content img:hover {
     cursor: pointer;
     transition: 0.2s;
-    transform: scale(1.1)
+    transform: scale(1.2)
 }

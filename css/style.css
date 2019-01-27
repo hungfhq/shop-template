@@ -13,6 +13,10 @@ a:hover {
   color: #19caaf;
 }
 
+button:focus {
+  outline: 0;
+}
+
 ul {
   padding: 0;
 }
@@ -190,10 +194,6 @@ ul li.cat-item:nth-last-child(1) {
   padding: 13px 30px 13px 17px;
 }
 
-.heading-left-menu i:hover {
-  cursor: pointer;
-  color: #19caaf;
-}
 
 a:hover > i {
   color: #777;
@@ -317,7 +317,11 @@ a:hover > i {
   margin-top: 20px;
 }
 
-
+/* latest section */
+.latest {
+  width: 100%;
+  position: relative;
+}
 
 /* Footer  */
 footer {
@@ -410,6 +414,12 @@ footer #footerSocial {
   color: #19caaf;
 }
 
+.fa-angle-up:hover, .fa-angle-down:hover {
+  cursor: pointer;
+  color: #19caaf;
+}
+
+
 .navbar {
   border: 0 !important;
   border-bottom-left-radius: 0 !important;
@@ -477,6 +487,14 @@ li.cat-item i.fa-angle-down {
 .fa-angle-down {
   margin-left: 4px;
 } */
+
+.owl-nav {
+  position: absolute;
+  top: -50px;
+  right: 30px;
+}
+
+
 
 @media (max-width: 1199px) and (min-width: 992px) {
 .navbar-inverse .navbar-nav>li>a {
