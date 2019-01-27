@@ -6,25 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- FAV icon -->
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
     crossorigin="anonymous">
 
-
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- vertical carousel CSS -->
+  <link rel="stylesheet" href="css/vertical-carousel.css">
 
   <!-- Scroll reveal script -->
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
+  <!-- Bootstrap core scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- owl carousel -->
+  <script src="js/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
   <!-- Custom css -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/sale-box.css">
+  <link rel="stylesheet" href="css/new-box.css">
+  <link rel="stylesheet" href="css/circle-list.css">
 
-  <title>Media shop - 18:29, 26 Jan - H</title>
+  <title>Media shop - 9:50, 27 Jan - H</title>
 </head>
 
 <body>
@@ -154,6 +166,7 @@
 
 
   </header>
+
   <div class="container">
     <div class="row">
       <div class="col-sm-3">
@@ -162,10 +175,10 @@
         </div>
         <div class="header">
           <ul>
-            <li class="cat-item"><a>Sound devices</a><i id="soundAccordion" class="accordion fa fa-angle-down fa-angle-right"
+            <li class="cat-item"><a href="">Sound devices</a><i id="soundAccordion" class="accordion fa fa-angle-down fa-angle-right"
                 data-toggle="collapse" data-target="#accordionUl" onclick="changeIcon(this)"></i>
             </li>
-            <div id="accordionUl" class="accordion-panel">
+            <div id="accordionUl" class="collapse">
               <a class="cat-item" href="">MP3 player</a>
               <a class="cat-item" href="">Sony Walkman</a>
               <a class="cat-item" href="">iPod</a>
@@ -204,7 +217,7 @@
           </div>
         </div>
         <!-- Specials section -->
-        <div class="hidden-xs">
+        <div class="">
           <div id="specials" class="header heading-left-menu">
             <p>Specials</p><i class="fas fa-angle-down pull-right"></i><i class="fas fa-angle-up pull-right"></i>
           </div>
@@ -214,7 +227,7 @@
               <div class="square">Sale</div>
               <div class="triangle-down"></div>
             </div>
-            <img class="sale-off pull-left img-responsive" src="img/specials.png">
+            <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
             <div>
               <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
               <a href="">EOS 750D and 760D specifications surface</a>
@@ -226,7 +239,7 @@
               <div class="square">Sale</div>
               <div class="triangle-down"></div>
             </div>
-            <img class="sale-off pull-left img-responsive" src="img/specials.png">
+            <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
             <div>
               <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
               <a href="">EOS 750D and 760D specifications surface</a>
@@ -240,7 +253,7 @@
             <p>Bestsellers</p><i class="fas fa-angle-down pull-right"></i><i class="fas fa-angle-up pull-right"></i>
           </div>
           <div class="sale-box">
-            <img class="sale-off pull-left img-responsive" src="img/bestsellers.png">
+            <img class="img-hover-zoom pull-left img-responsive" src="img/bestsellers.png">
             <div>
               <h4>£32.6 </h4>
               <a href="">Master Iron with Anti-Drip System</a>
@@ -248,7 +261,7 @@
           </div>
 
           <div class="sale-box">
-            <img class="sale-off pull-left img-responsive" src="img/bestsellers.png">
+            <img class="img-hover-zoom pull-left img-responsive" src="img/bestsellers.png">
             <div>
               <h4>£32.6 </h4>
               <a href="">Master Iron with Anti-Drip System</a>
@@ -256,7 +269,7 @@
           </div>
 
           <div class="sale-box">
-            <img class="sale-off pull-left img-responsive" src="img/bestsellers.png">
+            <img class="img-hover-zoom pull-left img-responsive" src="img/bestsellers.png">
             <div>
               <h4>£32.6 </h4>
               <a href="">Master Iron with Anti-Drip System</a>
@@ -265,8 +278,8 @@
         </div>
 
       </div><!-- End div col-sm-3 -->
-      <div class="col-sm-9">
-        <!-- main-contain -->
+      
+      <div class="col-sm-9">  <!-- main-contain -->
         <div id="mainCarousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <!-- wrapper for slides -->
@@ -279,10 +292,13 @@
             <div class="main-product item  carousel-item">
               <img src="img/smartphone.png" alt="" class="img-responsive">
               <h4>Samsung Galaxy J</h4>
-              <p>Comfort is a very important thing nowadays because it is a condition of satisfaction.</p>
+              <p>Trade-in a qualifying smartphone and take advantage of instant savings. Final price reflected in cart.
+                Valid for
+                Unlocked devices only.</p>
               <a href="">Shop now!</a>
             </div>
             <div class="main-product item carousel-item">
+              <img src="img/sony-experia.png" alt="" class="img-responsive">
               <h4>Sony Experia</h4>
               <p>Comfort is a very important thing nowadays because it is a condition of satisfaction.</p>
               <a href="">Shop now!</a>
@@ -291,14 +307,14 @@
 
             <div id="mainProductAngle">
               <a class="left carousel-control" href="#mainCarousel" data-slide="prev">
-              <i class="fas fa-chevron-circle-left"></i>
+                <i class="fas fa-chevron-circle-left fa-2x"></i>
               </a>
               <a class="right carousel-control" href="#mainCarousel" data-slide="next">
-              <i class="fas fa-chevron-circle-right"></i>
+                <i class="fas fa-chevron-circle-right fa-2x"></i>
               </a>
             </div> <!-- end left and right controls -->
           </div> <!-- end wrapper -->
-        </div> <!-- end Carousel -->
+        </div> <!-- end mainCarousel -->
 
 
         <div id="secondProduct">
@@ -318,17 +334,150 @@
               <p class="shop-now">Shop now!</p>
             </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <div id="specials" class="header heading-left-menu">
-            <p>Latest</p><i class="fas fa-angle-down pull-right"></i><i class="fas fa-angle-up pull-right"></i>
+        </div><!-- end secondProduct -->
+
+        <div id="latestSection">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div id="specials" class="header heading-left-menu">
+              <p>Latest</p><i class="fas fa-angle-down pull-right"></i><i class="fas fa-angle-up pull-right"></i>
+            </div>
           </div>
-        </div>
+          <div class="clearfix"></div> 
+
+
+          <div class="owl-carousel"> <!-- Start Owl-carousel -->
+          
+            
+            <div class="new-box item">
+              <div class="new-tag">
+                <div class="square-new-box">New</div>
+                <div class="triangle-down-new-box"></div>
+              </div>
+              <div class="new-box-content">
+                <img class="img-responsive" src="img/new-product.png">
+                <h4><span class="sale-price">£64.68</span></h4>
+                <a href="">EOS 750D and 760D specifications surface</a>
+                <p>Lorem ipsum dolor sit amet consectetur adpedit magni in tenetur quos, fugit sint nihil quidem cumque
+                  velit
+                  inventore!</p>
+              </div>
+              <div class="circle-list">
+                <span id="firstCircle" class="circle" data-toggle="tooltip" title="Add to cart">
+                  <i class="fa fa-shopping-cart"></i></span>
+                <span class="circle" data-toggle="tooltip" title="Add to wishlist">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="circle" data-toggle="tooltip" title="Compare this product">
+                  <i class="fas fa-paperclip"></i>
+                </span>
+                <span class="circle" data-toggle="tooltip" title="Quick view">
+                  <i class="far fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="new-box item">
+              <div class="new-tag">
+                <div class="square-new-box">New</div>
+                <div class="triangle-down-new-box"></div>
+              </div>
+              <div class="new-box-content">
+                <img class="img-responsive" src="img/new-product-2.png">
+                <h4><span class="sale-price">£64.68</span></h4>
+                <a href="">EOS 750D and 760D specifications surface</a>
+                <p>Lorem ipsum dolor sit amet consectetur adpedit magni in tenetur quos, fugit sint nihil quidem cumque
+                  velit
+                  inventore!</p>
+              </div>
+              <div class="circle-list">
+                <span id="firstCircle" class="circle" data-toggle="tooltip" title="Add to cart">
+                  <i class="fa fa-shopping-cart"></i></span>
+                <span class="circle" data-toggle="tooltip" title="Add to wishlist">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="circle" data-toggle="tooltip" title="Compare this product">
+                  <i class="fas fa-paperclip"></i>
+                </span>
+                <span class="circle" data-toggle="tooltip" title="Quick view">
+                  <i class="far fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="new-box item">
+              <div class="new-tag">
+                <div class="square-new-box">New</div>
+                <div class="triangle-down-new-box"></div>
+              </div>
+              <div class="new-box-content">
+                <img class="img-responsive" src="img/new-product-3.png">
+                <h4><span class="sale-price">£64.68</span></h4>
+                <a href="">EOS 750D and 760D specifications surface</a>
+                <p>Lorem ipsum dolor sit amet consectetur adpedit magni in tenetur quos, fugit sint nihil quidem cumque
+                  velit
+                  inventore!</p>
+              </div>
+              <div class="circle-list">
+                <span id="firstCircle" class="circle" data-toggle="tooltip" title="Add to cart">
+                  <i class="fa fa-shopping-cart"></i></span>
+                <span class="circle" data-toggle="tooltip" title="Add to wishlist">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="circle" data-toggle="tooltip" title="Compare this product">
+                  <i class="fas fa-paperclip"></i>
+                </span>
+                <span class="circle" data-toggle="tooltip" title="Quick view">
+                  <i class="far fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="new-box item">
+              <div class="new-tag">
+                <div class="square-new-box">New</div>
+                <div class="triangle-down-new-box"></div>
+              </div>
+              <div class="new-box-content">
+                <img class="img-responsive" src="img/new-product-4.png">
+                <h4><span class="sale-price">£64.68</span></h4>
+                <a href="">EOS 750D and 760D specifications surface</a>
+                <p>Lorem ipsum dolor sit amet consectetur adpedit magni in tenetur quos, fugit sint nihil quidem cumque
+                  velit
+                  inventore!</p>
+              </div>
+              <div class="circle-list">
+                <span id="firstCircle" class="circle" data-toggle="tooltip" title="Add to cart">
+                  <i class="fa fa-shopping-cart"></i></span>
+                <span class="circle" data-toggle="tooltip" title="Add to wishlist">
+                  <i class="far fa-heart"></i>
+                </span>
+                <span class="circle" data-toggle="tooltip" title="Compare this product">
+                  <i class="fas fa-paperclip"></i>
+                </span>
+                <span class="circle" data-toggle="tooltip" title="Quick view">
+                  <i class="far fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          
+            
+          </div> <!-- end Owl-carousel -->
+
+        </div> <!-- end #latestSection -->
+
+        
 
       </div>
     </div>
   </div><!-- end main-row -->
-  <!-- Footer -->
+  
+  
+
+
+
+
+  
+  
   <footer>
     <div class="container">
       <div class="row footer-border">
@@ -446,20 +595,40 @@
 
     // change icon Sound devices
     function changeIcon(x) {
-        x.classList.toggle("fa-angle-right");
-      }
+      x.classList.toggle("fa-angle-right");
+    }
 
+    // tooltip
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    // owlcarousel
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        center: true,
+        margin: 30,
+        nav: true,
+        dots: false,
+        responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 2,
+          nav: true
+        },
+        900: {
+          items: 3,
+          nav: true,
+          loop: true
+        }
+      }
+      });
   </script>
 
 
-
-
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 
 </body>

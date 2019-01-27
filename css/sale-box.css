@@ -1,7 +1,7 @@
 .sale-box {
   background: #f2f2f2;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
   margin-bottom: 20px;
   max-width: 270px;
   min-height: 116px;
@@ -9,7 +9,7 @@
   position: relative;
 }
 
-span.sale-price {
+.sale-price {
   color: #19caaf;
 }
 
@@ -17,46 +17,45 @@ span.sale-price {
     position: relative;
     top: -30px;
     left: 10px;
-
 }
 
 .square {
-    height: 16px;
-    width: 26px;
+    height: 20px;
+    width: 36px;
     background-color:#19caaf;
     color: #fff;
-    font-size: 10px !important;
-    padding-left: 4px;
-
+    font-size: 12px !important;
+    text-align: center;
+    line-height: 20px;
 }
 
 .triangle-down {
     width: 0;
     height: 0;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-top: 2px solid #19caaf;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #19caaf;
     position: absolute;
-    left: 12px;
+    left: 14px;
 }
 
-img.sale-off {
+.img-hover-zoom {
   transition: .2s;
   /* width: 40%; */
   /* height: 40%; */
 }
 
-img.sale-off:hover {
+.img-hover-zoom:hover {
  transform: scale(1.1);
  cursor: pointer;
 }
+
 .detail {
   float: left;
 }
 
-
 @media (min-width: 375px) {
-  img.sale-off {
+ .img-hover-zoom {
     width: 40%;
     height: 50%;
   }

@@ -56,8 +56,9 @@ input:focus {
 }
 
 #accordionUl>a {
-  padding-left: 24px;
+  padding-left: 30px;
 }
+
 
 ul.top-list {
   margin-top: 19px;
@@ -157,8 +158,8 @@ img.logo {
   height: 59px;
   background: #19caaf;
   color: #fff;
-  padding-top: 16px;
-  padding-left: 20px;
+  padding-top: 20px;
+  padding-left: 26px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   margin-top: -60px; 
@@ -172,6 +173,7 @@ img.logo {
 }
 a.cat-item {
   display: block;
+  font-size: 1.1em;
 }
 
 /* ul li.cat-item:nth-child(1) {
@@ -246,7 +248,7 @@ a:hover > i {
   position: absolute;
   top: 290px;
   right: 50px;
-  width: 30px;
+  width: 52px;
 }
 
 #mainProductAngle i {
@@ -314,6 +316,7 @@ a:hover > i {
 #secondProduct {
   margin-top: 20px;
 }
+
 
 
 /* Footer  */
@@ -467,9 +470,9 @@ li.cat-item i.fa-angle-down {
   margin-right: 10px;
 }
 
-/* .fa-angle-up {
-  margin-left: 140px;
-} */
+.fa-angle-up {
+  margin-right: 10px;
+}
 /* 
 .fa-angle-down {
   margin-left: 4px;
