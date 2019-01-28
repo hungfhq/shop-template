@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FAV icon -->
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+
+  <!-- Scroll reveal script -->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+  
+
+  <!-- owl carousel -->
+  <script src="js/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+
+  
+
+  <!-- Custom css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sale-box.css">
+  <link rel="stylesheet" href="css/new-box.css">
+  <link rel="stylesheet" href="css/circle-list.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <!-- cycle2 vertical carousel JS -->
+  <script src="http://malsup.github.io/jquery.cycle2.js"></script>
+  <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
+  <script>$.fn.cycle.defaults.autoSelector = '.slideshow';</script>
+
+  <title>Media shop Test</title>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-9">
+      <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+      
+        <div id="dismiss">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+      
+        <div class="sidebar-header">
+          <h3>Bootstrap Sidebar</h3>
+        </div>
+      
+        <ul class="list-unstyled components">
+          <p>Dummy Heading</p>
+          <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                <a href="#">Home 1</a>
+              </li>
+              <li>
+                <a href="#">Home 2</a>
+              </li>
+              <li>
+                <a href="#">Home 3</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">About</a>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li>
+                <a href="#">Page 1</a>
+              </li>
+              <li>
+                <a href="#">Page 2</a>
+              </li>
+              <li>
+                <a href="#">Page 3</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Page Content -->
+      <div id="content">
+      
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+      
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fas fa-align-left"></i>
+              <span>Toggle Sidebar</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <!-- Dark Overlay element -->
+      <div class="overlay"></div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3">
+
+    </div>
+
+  </div>
+</div>
+
+          
+
+  
+ 
+
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.info-left', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('.info-right', {
+      duration: 2000,
+      origin: 'right',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+
+    // change icon Sound devices
+    function changeIcon(x) {
+      x.classList.toggle("fa-angle-right");
+    }
+
+    // tooltip
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    // owlcarousel
+    $('.owl-carousel').owlCarousel({
+        loop: false,
+        margin: 1,
+        nav: true,
+        dots: false,
+        // responsive: {
+        //   0: {
+        //     items: 1
+        //   },
+        //   600: {
+        //     items: 3
+        //   },
+        //   1000: {
+        //     items: 5
+        //   }
+        // }
+      });
+
+
+      // vertical multi-item carousel
+
+      $('.carousel .vertical .item').each(function () {
+          var next = $(this).next();
+          if (!next.length) {
+            next = $(this).siblings(':first');
+          }
+          next.children(':first-child').clone().appendTo($(this));
+
+          for (var i = 1; i < 2; i++) {
+            next = next.next();
+            if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+
+            next.children(':first-child').clone().appendTo($(this));
+          }
+        });
+
+
+
+
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#dismiss, .overlay').on('click', function () {
+        // hide sidebar
+        $('#sidebar').removeClass('active');
+        // hide overlay
+        $('.overlay').removeClass('active');
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        // open sidebar
+        $('#sidebar').addClass('active');
+        // fade in the overlay
+        $('.overlay').addClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+</body>
+
+</html>

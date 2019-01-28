@@ -6,9 +6,10 @@
 
 .new-box-content {
 	border: 1px solid #e1e0e0;
-	height: 448px;
+    height: 448px;
+    width: 99%;
 	padding: 10px 20px 20px 20px;
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .square-new-box {

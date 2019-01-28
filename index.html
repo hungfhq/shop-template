@@ -38,6 +38,13 @@
   <link rel="stylesheet" href="css/circle-list.css">
   <link rel="stylesheet" href="css/vertical-carousel.css">
 
+  <!-- to-top css -->
+  <link rel="stylesheet" href="css/to-top.css">
+
+  <!-- lazy loading xt -->
+  <script src="js/jquery.lazyloadxt.min.js"></script>
+  <link rel="stylesheet" href="css/jquery.lazyloadxt.spinner.min.css">
+
   <!-- cycle2 vertical carousel JS -->
   <script src="http://malsup.github.io/jquery.cycle2.js"></script>
   <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
@@ -90,7 +97,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4 col-xs-6">
-          <img class="logo" src="img/logo.png" alt=""></div>
+          <img class="logo" data-src="img/logo.png" alt=""></div>
         <div class="col-sm-5 col-xs-6">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon2">
@@ -241,7 +248,7 @@
                     <div class="square">Sale</div>
                     <div class="triangle-down"></div>
                   </div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/new-product-2.png">
+                  <img class="img-hover-zoom pull-left img-responsive" data-src="https://cdn.tgdd.vn/Products/Images/1942/96148/tivi-samsung-55-inch-ua55mu6500-6-550x340.jpg">
                   <div class="detail">
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
@@ -256,7 +263,7 @@
                     <div class="square">Sale</div>
                     <div class="triangle-down"></div>
                   </div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/new-product-3.png">
+                  <img class="img-hover-zoom pull-left img-responsive" data-src="img/new-product-3.png">
                   <div class="detail">
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
@@ -271,7 +278,7 @@
                     <div class="square">Sale</div>
                     <div class="triangle-down"></div>
                   </div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
+                  <img class="img-hover-zoom pull-left img-responsive" data-src="img/specials.png">
                   <div class="detail">
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
@@ -286,7 +293,7 @@
                     <div class="square">Sale</div>
                     <div class="triangle-down"></div>
                   </div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
+                  <img class="img-hover-zoom pull-left img-responsive" data-src="https://cdn.tgdd.vn/Products/Images/1942/162455/tivi-samsung-ua55nu7500-5-550x340.jpg">
                   <div class="detail">
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
@@ -301,7 +308,7 @@
                     <div class="square">Sale</div>
                     <div class="triangle-down"></div>
                   </div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
+                  <img class="img-hover-zoom pull-left img-responsive" data-src="https://cdn.tgdd.vn/Products/Images/1942/171435/tivi-samsung-ua32n4000-31-550x340.jpg">
                   <div class="detail">
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
@@ -325,7 +332,7 @@
               <div class="sale-box">
                 <div class="sale-box-content">
                   <div class="blank"></div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/new-product-2.png">
+                  <img class="img-hover-zoom pull-left img-responsive" data-src="img/new-product-2.png">
                   <div class="detail">
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
@@ -337,7 +344,7 @@
               <div class="sale-box">
                 <div class="sale-box-content">
                   <div class="blank"></div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/new-product-3.png">
+                  <img class="img-hover-zoom pull-left img-responsive" data-src="img/new-product-3.png">
                   <div class="detail">
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
@@ -349,7 +356,7 @@
               <div class="sale-box">
                 <div class="sale-box-content">
                   <div class="blank"></div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
+                  <img class="img-hover-zoom pull-left img-responsive" data-src="img/tivi.jpg">
                   <div class="detail">
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
@@ -361,7 +368,7 @@
               <div class="sale-box">
                 <div class="sale-box-content">
                   <div class="blank"></div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
+                  <img class="img-hover-zoom pull-left img-responsive" data-src="img/new-product-5.png">
                   <div class="detail">
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
@@ -373,7 +380,7 @@
               <div class="sale-box">
                 <div class="sale-box-content">
                   <div class="blank"></div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
+                  <img class="img-hover-zoom pull-left img-responsive" data-src="img/new-product-6.png">
                   <div class="detail">
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
@@ -392,12 +399,12 @@
             <!-- wrapper for slides -->
             <div class="main-product active item carousel-item">
               <h4>iPhone 6</h4>
-              <img src="img/iPhone-Reparation.png" alt="" class="img-responsive">
+              <img data-src="img/iPhone-Reparation.png" alt="" class="img-responsive">
               <p>Comfort is a very important thing nowadays because it is a condition of satisfaction.</p>
               <a href="">Shop now!</a>
             </div>
             <div class="main-product item  carousel-item">
-              <img src="img/smartphone.png" alt="" class="img-responsive">
+              <img data-src="img/smartphone.png" alt="" class="img-responsive">
               <h4>Samsung Galaxy J</h4>
               <p>Trade-in a qualifying smartphone and take advantage of instant savings. Final price reflected in cart.
                 Valid for
@@ -405,7 +412,7 @@
               <a href="">Shop now!</a>
             </div>
             <div class="main-product item carousel-item">
-              <img src="img/sony-experia.png" alt="" class="img-responsive">
+              <img data-src="img/sony-experia.png" alt="" class="img-responsive">
               <h4>Sony Experia XZS</h4>
               <p>Comfort is a very important thing nowadays because it is a condition of satisfaction.</p>
               <a href="">Shop now!</a>
@@ -426,7 +433,7 @@
 
         <div id="secondProduct">
           <div class="info-left second-product col-xs-12 col-sm-12 col-md-6">
-            <img class="img-responsive" src="img/second-product-1.png" alt="">
+            <img class="img-responsive" data-src="img/second-product-1.png" alt="">
             <div class="second-product-info">
               <h4><span class="sale-price">TV & Video</span></h4>
               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, enim! </p>
@@ -434,7 +441,7 @@
             </div>
           </div>
           <div class="info-right second-product col-xs-12 col-sm-12 col-md-6 pull-right">
-            <img class="img-responsive" src="img/second-product-2.png" alt="">
+            <img class="img-responsive" data-src="img/second-product-2.png" alt="">
             <div class="second-product-info">
               <h4><span class="sale-price">Home Appliance</span></h4>
               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, enim! </p>
@@ -461,7 +468,7 @@
               </div>
               <div class="new-box-content">
                 <div class="img-wrapper">
-                  <img class="img-responsive" src="img/new-product.png">
+                  <img class="img-responsive" data-src="img/new-product.png">
                 </div>
                 <h4><span class="sale-price">£64.68</span></h4>
                 <a href="">EOS 750D and 760D specifications surface</a>
@@ -491,7 +498,7 @@
               </div>
               <div class="new-box-content">
                 <div class="img-wrapper">
-                  <img class="img-responsive" src="img/new-product-2.png">
+                  <img class="img-responsive" data-src="img/new-product-2.png">
                 </div>
                 <h4><span class="sale-price">£64.68</span></h4>
                 <a href="">EOS 750D and 760D specifications surface</a>
@@ -521,7 +528,7 @@
               </div>
               <div class="new-box-content">
                 <div class="img-wrapper">
-                  <img class="img-responsive" src="img/new-product-3.png">
+                  <img class="img-responsive" data-src="img/new-product-3.png">
                 </div>
                 <h4><span class="sale-price">£64.68</span></h4>
                 <a href="">EOS 750D and 760D specifications surface</a>
@@ -551,7 +558,7 @@
               </div>
               <div class="new-box-content">
                 <div class="img-wrapper">
-                  <img class="img-responsive" src="img/new-product-4.png">
+                  <img class="img-responsive" data-src="img/new-product-4.png">
                 </div>
                 <h4><span class="sale-price">£64.68</span></h4>
                 <a href="">EOS 750D and 760D specifications surface</a>
@@ -595,7 +602,7 @@
             <div class="new-box item">
               <div class="new-box-content">
                 <div class="img-wrapper">
-                  <img class="img-responsive" src="img/new-product-5.png">
+                  <img class="img-responsive" data-src="img/new-product-5.png">
                 </div>
                 <h4><span class="sale-price">£64.68</span></h4>
                 <a href="">EOS 750D and 760D specifications surface</a>
@@ -622,7 +629,7 @@
             <div class="new-box item">
               <div class="new-box-content">
                 <div class="img-wrapper">
-                  <img class="img-responsive" src="img/new-product-2.png">
+                  <img class="img-responsive" data-src="img/new-product-2.png">
                 </div>
                 <h4><span class="sale-price">£64.68</span></h4>
                 <a href="">EOS 750D and 760D specifications surface</a>
@@ -648,7 +655,7 @@
             <div class="new-box item">
               <div class="new-box-content">
                 <div class="img-wrapper">
-                  <img class="img-responsive" src="img/new-product-3.png">
+                  <img class="img-responsive" data-src="https://cdn.tgdd.vn/Products/Images/1942/162241/tivi-samsung-ua49nu7100-13-550x340.jpg">
                 </div>
                 <h4><span class="sale-price">£64.68</span></h4>
                 <a href="">EOS 750D and 760D specifications surface</a>
@@ -674,7 +681,7 @@
             <div class="new-box item">
               <div class="new-box-content">
                 <div class="img-wrapper">
-                  <img class="img-responsive" src="img/new-product-4.png">
+                  <img class="img-responsive" data-src="img/tivi-samsung-55.jpg">
                 </div>
                 <h4><span class="sale-price">£64.68</span></h4>
                 <a href="">EOS 750D and 760D specifications surface</a>
@@ -807,7 +814,7 @@
         </div>
       </div>
       <div class="hidden-xs">
-        <img src="img/footer-logo.png" alt="footer logo">
+        <img data-src="img/footer-logo.png" alt="footer logo">
         <p>Powered By OpenCart Electronics online store © 2019</p>
       </div>
     </div>
@@ -818,7 +825,7 @@
 
   <!-- Main js -->
   <script src="js/main.js"></script>
-  <a href="#0" class="cd-top js-cd-top"><i class="fa fa-angle-up fa-4x"></i></a>
+  <a href="#0" class="cd-top js-cd-top"><i class="fa fa-angle-up fa-4x pull-right"></i></a>
   <script src="js/to-top.js"></script>
 
 

@@ -412,7 +412,6 @@ footer #footerSocial {
 /* back top top link */
 a.cd-top i {
   color: #777;
-  position: fixed;
   bottom: 50px;
   right: 50px;
 }
