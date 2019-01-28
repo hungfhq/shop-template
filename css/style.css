@@ -191,7 +191,7 @@ ul li.cat-item:nth-last-child(1) {
 .heading-left-menu {
   font-size: 14px;
   margin: 20px 0;
-  padding: 13px 30px 13px 17px;
+  padding: 13px 30px 10px 17px;
 }
 
 
@@ -202,12 +202,16 @@ a:hover > i {
 #specials p {
   display: inline;
 }
+
+
+
+
 /* Main contain */
 
 .main-product {
   background: #f2f2f2;
   margin-top: 30px;
-  height: 330px;
+  height: 400px;
   padding-left: 350px;
   padding-top: 100px;
 }
@@ -246,7 +250,7 @@ a:hover > i {
 
 #mainProductAngle {
   position: absolute;
-  top: 290px;
+  bottom: 50px;
   right: 50px;
   width: 52px;
 }
@@ -314,7 +318,7 @@ a:hover > i {
 }
 
 #secondProduct {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 /* latest section */
@@ -403,6 +407,14 @@ footer #footerSocial {
 
 #footerSocial ul li a:hover {
   color: #777  !important;
+}
+
+/* back top top link */
+a.cd-top i {
+  color: #777;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
 }
 
 /* Override Bootstrap & Fontawesome class */
@@ -559,6 +571,13 @@ li.cat-item i.fa-angle-down {
   }
 }
 
+@media (max-width: 700px) {
+  .slideshow {
+  width: 300px;
+  margin: auto;
+  }
+}
+
 @media (max-width: 986px) {
   .second-product {
     margin-bottom: 30px;
@@ -569,3 +588,10 @@ li.cat-item i.fa-angle-down {
     z-index: -1;
   }
 }
+
+/* @media (min-width: 300px) {
+ .img-hover-zoom {
+    width:40%;
+    height: 55%;
+  }
+} */

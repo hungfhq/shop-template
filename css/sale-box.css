@@ -1,12 +1,13 @@
 .sale-box {
+  width: 320px;
+  height: 136px;
+  padding-top: 16px;
+  /* border: 1px solid #000; */
+}
+
+.sale-box-content {
   background: #f2f2f2;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  max-width: 270px;
-  min-height: 116px;
-  padding: 20px;
-  position: relative;
+  height: 100%;
 }
 
 .sale-price {
@@ -15,7 +16,7 @@
 
 .sale-tag {
     position: relative;
-    top: -30px;
+    top: -10px;
     left: 10px;
 }
 
@@ -27,6 +28,10 @@
     font-size: 12px !important;
     text-align: center;
     line-height: 20px;
+}
+
+.blank {
+  height: 20px;
 }
 
 .triangle-down {
@@ -41,8 +46,8 @@
 
 .img-hover-zoom {
   transition: .2s;
-  /* width: 40%; */
-  /* height: 40%; */
+  width: 30%;
+  height: 45%;
 }
 
 .img-hover-zoom:hover {
@@ -52,11 +57,6 @@
 
 .detail {
   float: left;
+  width: 130px;
 }
 
-@media (min-width: 375px) {
- .img-hover-zoom {
-    width: 40%;
-    height: 50%;
-  }
-}

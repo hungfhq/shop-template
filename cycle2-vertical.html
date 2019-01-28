@@ -43,7 +43,7 @@
   <script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
   <script>$.fn.cycle.defaults.autoSelector = '.slideshow';</script>
 
-  <title>shop online</title>
+  <title>Cycle2 vertical</title>
 </head>
 
 <body>
@@ -225,12 +225,72 @@
         </div>
         <!-- Specials section -->
         <div id="specials" class="header heading-left-menu">
-          <p>Specials</p>
+          <p>Specials</p><i class="fas fa-angle-down pull-right"></i><i class="fas fa-angle-up pull-right"></i>
+        </div>
+
+        <div class="sale-box">
+          <div class="sale-tag">
+            <div class="square">Sale</div>
+            <div class="triangle-down"></div>
+          </div>
+          <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
+          <div>
+            <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
+            <a href="">EOS 750D and 760D specifications surface</a>
+          </div>
+        </div>
+
+        <div class="sale-box">
+          <div class="sale-tag">
+            <div class="square">Sale</div>
+            <div class="triangle-down"></div>
+          </div>
+          <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
+          <div>
+            <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
+            <a href="">EOS 750D and 760D specifications surface</a>
+          </div>
+        </div>
+
+
+
+        <!-- Bestsellers section -->
+        <div id="specials" class="header heading-left-menu">
+          <p>Bestsellers</p><i class="fas fa-angle-down pull-right"></i><i class="fas fa-angle-up pull-right"></i>
+        </div>
+        <div class="sale-box">
+          <img class="img-hover-zoom pull-left img-responsive" src="img/bestsellers.png">
+          <div>
+            <h4>£32.6 </h4>
+            <a href="">Master Iron with Anti-Drip System</a>
+          </div>
+        </div>
+
+        <div class="sale-box">
+          <img class="img-hover-zoom pull-left img-responsive" src="img/bestsellers.png">
+          <div>
+            <h4>£32.6 </h4>
+            <a href="">Master Iron with Anti-Drip System</a>
+          </div>
+        </div>
+
+        <div class="sale-box">
+          <img class="img-hover-zoom pull-left img-responsive" src="img/bestsellers.png">
+          <div>
+            <h4>£32.6 </h4>
+            <a href="">Master Iron with Anti-Drip System</a>
+          </div>
+        </div>
+
+        <!-- start cycle2 -->
+        <div id="specials" class="header heading-left-menu">
+          <p>cycle2</p>
           <a href=# id=next><i class="fas fa-angle-down pull-right"></i></a>
           <a href=# id=prev><i class="fas fa-angle-up pull-right"></i></a>
         </div>
         <div class="slideshow vertical" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-next="#next"
-          data-cycle-prev="#prev" data-cycle-slides="li" data-cycle-carousel-visible=2 data-cyle-center-horz=true   data-cycle-center-vert=true  data-cycle-carousel-vertical=true>
+          data-cycle-prev="#prev" data-cycle-slides="li" data-cycle-auto-height=true data-cycle-carousel-visible=2
+          data-cycle-carousel-vertical=true>
           <!-- <div class="slideshow vertical" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-next="#next" data-cycle-prev="#prev"
             data-cycle-pager="#pager3" data-cycle-carousel-visible=2 data-cycle-carousel-vertical=true> -->
           <ul>
@@ -242,7 +302,7 @@
                     <div class="triangle-down"></div>
                   </div>
                   <img class="img-hover-zoom pull-left img-responsive" src="img/new-product-2.png">
-                  <div class="detail">
+                  <div>
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
                   </div>
@@ -257,7 +317,7 @@
                     <div class="triangle-down"></div>
                   </div>
                   <img class="img-hover-zoom pull-left img-responsive" src="img/new-product-3.png">
-                  <div class="detail">
+                  <div>
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
                   </div>
@@ -272,7 +332,7 @@
                     <div class="triangle-down"></div>
                   </div>
                   <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
-                  <div class="detail">
+                  <div>
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
                   </div>
@@ -287,7 +347,7 @@
                     <div class="triangle-down"></div>
                   </div>
                   <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
-                  <div class="detail">
+                  <div>
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
                   </div>
@@ -302,7 +362,7 @@
                     <div class="triangle-down"></div>
                   </div>
                   <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
-                  <div class="detail">
+                  <div>
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
                   </div>
@@ -310,79 +370,20 @@
               </div>
             </li>
           </ul>
-        </div><!-- end Specials Section -->
 
-        <!-- start Bestsellers section -->
-        <div id="specials" class="header heading-left-menu">
-          <p>Bestsellers</p>
-          <a href=# id=next1><i class="fas fa-angle-down pull-right"></i></a>
-          <a href=# id=prev1><i class="fas fa-angle-up pull-right"></i></a>
-        </div>
-        <div class="slideshow vertical" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-next="#next1" data-cycle-prev="#prev1"
-          data-cycle-slides="li" data-cycle-auto-height=true data-cycle-carousel-visible=3 data-cycle-carousel-vertical=true>
-          <ul>
-            <li>
-              <div class="sale-box">
-                <div class="sale-box-content">
-                  <div class="blank"></div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/new-product-2.png">
-                  <div class="detail">
-                    <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
-                    <a href="">EOS 750D and 760D specifications surface</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="sale-box">
-                <div class="sale-box-content">
-                  <div class="blank"></div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/new-product-3.png">
-                  <div class="detail">
-                    <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
-                    <a href="">EOS 750D and 760D specifications surface</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="sale-box">
-                <div class="sale-box-content">
-                  <div class="blank"></div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
-                  <div class="detail">
-                    <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
-                    <a href="">EOS 750D and 760D specifications surface</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="sale-box">
-                <div class="sale-box-content">
-                  <div class="blank"></div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
-                  <div class="detail">
-                    <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
-                    <a href="">EOS 750D and 760D specifications surface</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="sale-box">
-                <div class="sale-box-content">
-                  <div class="blank"></div>
-                  <img class="img-hover-zoom pull-left img-responsive" src="img/specials.png">
-                  <div class="detail">
-                    <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
-                    <a href="">EOS 750D and 760D specifications surface</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div><!-- end Bestsellers Section -->
+
+
+          <!-- <img src="http://malsup.github.io/images/beach1.jpg">
+            <img src="http://malsup.github.io/images/beach2.jpg">
+            <img src="http://malsup.github.io/images/beach3.jpg">
+            <img src="http://malsup.github.io/images/beach4.jpg">
+            <img src="http://malsup.github.io/images/beach5.jpg">
+            <img src="http://malsup.github.io/images/beach6.jpg">
+            <img src="http://malsup.github.io/images/beach7.jpg">
+            <img src="http://malsup.github.io/images/beach8.jpg">
+            <img src="http://malsup.github.io/images/beach9.jpg"> -->
+        </div><!-- end cycle2 -->
+
       </div><!-- End div col-sm-3 -->
 
       <div class="col-sm-9">
@@ -818,8 +819,6 @@
 
   <!-- Main js -->
   <script src="js/main.js"></script>
-  <a href="#0" class="cd-top js-cd-top"><i class="fa fa-angle-up fa-4x"></i></a>
-  <script src="js/to-top.js"></script>
 
 
 </body>
