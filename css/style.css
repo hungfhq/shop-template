@@ -593,6 +593,11 @@ header {
     font-size: 16px !important;
   }
 
+  .box-cart #cart-detail {
+    position: fixed;
+    top: 44px;
+  }
+
 	.custom-navbar .navbar-right {
 	    float: right;
 	    padding-right: 15px;
