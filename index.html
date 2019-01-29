@@ -118,17 +118,20 @@
         <div class="col-sm-3"></div>
 
         <div class="col-sm-9">
-          <nav class="navbar navbar-inverse hidden-xs">
+          <!-- <nav class="navbar navbar-inverse hidden-xs"> -->
+          <nav class="navbar navbar-inverse custom-navbar" role="navigation">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+              <button type="button" class="navbar-toggle collapsed hidden-sm hidden-xs" data-toggle="collapse" data-target="#navbar"
                 aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
               </button>
+              <a class="swipe-control" href=""><i class="fa fa-align-justify"></i> </a>
 
-              <div id="navbar" class="collapse navbar-collapse">
+              <div id="navbar" class="collapse navbar-collapse navbar-left">
                 <ul class="nav navbar-nav">
                   <li><a href="#"><i class="fa fa-home"></i><span class="hidden-sm"> Home</span></a></li>
                   <li><a href="#"><i class="fa fa-star"></i><span class="hidden-sm"> Wish List (0)</span></a></li>
@@ -153,12 +156,12 @@
               </div>
 
             </div>
-            <div class="box-cart pull-right hidden-xs">
+            <div class="box-cart pull-right">
               <div id="cart" class="cart">
                 <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="dropdown-toggle">
                   <span> <i class="fa fa-shopping-cart"></i></span>
-                  <span id="cart-total" class="cart-total">0 item(s)</span>
-                  <i class="fa fa-angle-down"></i>
+                  <span id="cart-total" class="cart-total hidden-xs">0 item(s)</span>
+                  <i class="fa fa-angle-down hidden-xs"></i>
                 </button>
                 <ul id="cart-detail" class="dropdown-menu pull-right">
                   <li>
@@ -368,7 +371,7 @@
               <div class="sale-box">
                 <div class="sale-box-content">
                   <div class="blank"></div>
-                  <img class="img-hover-zoom pull-left img-responsive" data-src="img/new-product-5.png">
+                  <img class="img-hover-zoom pull-left img-responsive" data-src="https://cdn.tgdd.vn/Products/Images/1942/159663/tivi-samsung-qled-qa55q8cn-14-550x340.jpg">
                   <div class="detail">
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
@@ -380,7 +383,7 @@
               <div class="sale-box">
                 <div class="sale-box-content">
                   <div class="blank"></div>
-                  <img class="img-hover-zoom pull-left img-responsive" data-src="img/new-product-6.png">
+                  <img class="img-hover-zoom pull-left img-responsive" data-src="https://cdn.tgdd.vn/Products/Images/1942/160295/tivi-tivi-qled-samsung-qa55q7fn-5-550x340.jpg">
                   <div class="detail">
                     <h4><span class="sale-price">£64.68</span><small> <strike>£1003.5</strike> </small> </h4>
                     <a href="">EOS 750D and 760D specifications surface</a>
@@ -602,7 +605,7 @@
             <div class="new-box item">
               <div class="new-box-content">
                 <div class="img-wrapper">
-                  <img class="img-responsive" data-src="img/new-product-5.png">
+                  <img class="img-responsive" data-src="https://cdn.tgdd.vn/Products/Images/1942/93699/tivi-qled-samsung-qa55q8c-8-550x340.jpg">
                 </div>
                 <h4><span class="sale-price">£64.68</span></h4>
                 <a href="">EOS 750D and 760D specifications surface</a>
@@ -825,7 +828,7 @@
 
   <!-- Main js -->
   <script src="js/main.js"></script>
-  <a href="#0" class="cd-top js-cd-top"><i class="fa fa-angle-up fa-4x pull-right"></i></a>
+  <a href="#0" class="cd-top js-cd-top hidden-sm hidden-xs"><i class="fa fa-angle-up fa-4x pull-right"></i></a>
   <script src="js/to-top.js"></script>
 
 
