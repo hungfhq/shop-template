@@ -37,6 +37,8 @@
   <link rel="stylesheet" href="css/new-box.css">
   <link rel="stylesheet" href="css/circle-list.css">
   <link rel="stylesheet" href="css/vertical-carousel.css">
+  <link rel="stylesheet" href="css/sidebar-overlay.css">
+
 
   <!-- to-top css -->
   <link rel="stylesheet" href="css/to-top.css">
@@ -54,8 +56,23 @@
 </head>
 
 <body>
+  <div id="swipeMenu" class="col-xs-12 hidden-sm hidden-md hidden-lg">
 
-
+  </div>
+<!-- sidebar overlay Section -->
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar__btn-close" id="sidebarBtnClose"></div>
+  <ul>
+    <li><a href="">Home home home</a></li>
+    <li><a href="">Home home home</a></li>
+    <li><a href="">Home home home</a></li>
+  </ul>
+</nav>
+<div class="sidebar-overlay"></div>
+<div>
+  <button class="btn-menu swipe-control" id="sidebarBtnOpen"><i class="fa fa-align-justify"></i></button>
+</div>
+<!-- end sidebar overlay-->
   <header class="header">
     <div class="container">
       <ul class="top-list pull-right">
@@ -114,22 +131,21 @@
     </div>
 
     <div class="container">
+      
       <div class="row">
         <div class="col-sm-3"></div>
 
         <div class="col-sm-9">
           <!-- <nav class="navbar navbar-inverse hidden-xs"> -->
-          <nav class="navbar navbar-inverse custom-navbar" role="navigation">
+          <nav class="navbar navbar-inverse custom-navbar hidden-xs" role="navigation">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed hidden-sm hidden-xs" data-toggle="collapse" data-target="#navbar"
                 aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
               </button>
-              <a class="swipe-control" href=""><i class="fa fa-align-justify"></i> </a>
+              
+              <!-- <a class="swipe-control" href=""><i class="fa fa-align-justify"></i> </a> -->
 
               <div id="navbar" class="collapse navbar-collapse navbar-left">
                 <ul class="nav navbar-nav">
@@ -172,12 +188,24 @@
             </div>
             <!--/.nav-collapse -->
           </nav>
-
+<div class="box-cart hidden-sm hidden-md hidden-lg">
+  <div id="cart" class="cart">
+    <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="dropdown-toggle">
+      <span> <i class="fa fa-shopping-cart"></i></span>
+      <span id="cart-total" class="cart-total hidden-xs">0 item(s)</span>
+      <i class="fa fa-angle-down hidden-xs"></i>
+    </button>
+    <ul id="cart-detail" class="dropdown-menu pull-right">
+      <li>
+        <p class="text-center">Your shopping cart is empty!</p>
+      </li>
+    </ul>
+  </div>
+</div>
 
         </div>
       </div>
     </div>
-
 
 
 
@@ -830,7 +858,7 @@
   <script src="js/main.js"></script>
   <a href="#0" class="cd-top js-cd-top hidden-sm hidden-xs"><i class="fa fa-angle-up fa-4x pull-right"></i></a>
   <script src="js/to-top.js"></script>
-
+<script src="js/sidebar-overlay.js"></script>
 
 </body>
 

@@ -27,6 +27,7 @@ li {
 
 input[type="text"] {
   border: none;
+  z-index: 0 !important;
 }
 
 a.dropdown-menu-item:hover {
@@ -41,6 +42,13 @@ input:focus {
 /* input[type="text"]:focus {
   outline: none !important;
 } */
+#swipeMenu {
+  height: 46px;
+  background: #000;
+  position: fixed;
+  z-index: 3;
+}
+
 
 .header {
   background: #f2f2f2;
@@ -547,10 +555,9 @@ header {
   }
 
   .swipe-control i {
-    line-height: 40px;
+    line-height: 20px;
     font-size: 30px;
     color: #fff;
-    margin-left: 15px;
   }
 
   .swipe-control i:hover {
@@ -571,11 +578,15 @@ header {
   }
 
   .box-cart button {
-    height: 50px;
+    height: 46px;
     line-height: 50px;
     max-width: 80px;
     border-radius: 0;
     padding: 0 15px 0 5px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
   }
 
   .box-cart button .fa-shopping-cart {
