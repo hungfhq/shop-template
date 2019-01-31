@@ -47,7 +47,9 @@ input:focus {
   background: #000;
   position: fixed;
   z-index: 3;
+ box-shadow: 0 3px 5px rgba(0,0,0,.175);
 }
+
 
 
 .header {
