@@ -663,7 +663,7 @@ header {
   }
 }
 
-@media (max-width: 375px){
+@media (max-width: 668px){
   footer .col-sm-8 .col-xs-3 {
   padding-left: 10px !important;
   }
